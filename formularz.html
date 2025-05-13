@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .in{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            background-color: blue;
+            color: whitesmoke; 
+        }
+
+        .formularz{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 300px;
+            background-color: bisque;
+        }
+
+        .formularz h1{
+            font-size: 51px;
+            color: rgb(0, 0, 0);
+        }
+
+        .formularz2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: red;
+        }
+
+        input::placeholder{
+            color: white;
+        }
+
+        .formularz2 h1{
+            font-size: 51px;
+        }
+
+        .formularz2 input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            background-color: blue;
+            color: whitesmoke;
+        }
+
+        .footerr{
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            background-color: blue;
+        }
+
+        .a{
+            text-decoration: none;
+        }
+
+        .buttoon{
+            background-color: black;
+            color: white;
+            width: 150px;
+            height: 40px;
+        }
+
+    </style>
+</body>
+<body>
+    <div class="formularz">
+        <h1>Wypełni formularz</h1>
+
+        <form action="#">
+            <label for="">
+                <input placeholder="imie" type="name">
+            </label>
+            <label for="">
+                <input placeholder="Email" type="email">
+            </label>
+            <label for="">
+                <input placeholder="Numer Telefonu" type="number">
+            </label>
+            <select name="" id="">
+                <option value="">Warszawa</option>
+                <option value="">Łódź</option>
+                <option value="">Białystok</option>
+                <option value="">Gdańsk</option>
+                <option value="">Lublin</option>
+                <option value="">Wrocław</option>
+                <option value="">Poznań</option>
+                <option value="">Kraków</option>
+                <option value="">Szczecin</option>
+                <option value="">Toruń</option>
+                <option value="">Gdynia</option>
+            </select>
+            <input class="in" type="submit">
+        </form>
+    </div>
+    <div class="formularz2">
+        <h1>Zostaw komentarz</h1>
+        <form action=""></form>
+            <label for="">
+                <textarea placeholder="komentarz" name="" id=""></textarea>
+            </label>
+            <label for=""> <input type="submit"> </label>
+        </form>
+    </div>
+    <div class="footerr"></div>
+        <a class="a" href="index.html"><button class="buttoon">Wróć na strone</button></a>
+    </div>
+</body>
+</html>
